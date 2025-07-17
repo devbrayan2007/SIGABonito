@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA Bonito</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="app-header-left">
+                <span class="app-icon"><i class="fa-solid fa-question-circle"></i></span>
+                <p class="app-name">Q&A Moderno</p>
+                <div class="search-wrapper">
+                    <input class="search-input" type="text" placeholder="Pesquisar perguntas...">
+                    <i class="fa-solid fa-search search-icon"></i>
+                </div>
+            </div>
+            <div class="app-header-right">
+                <button class="btn btn-primary" id="ask-question-btn"><i class="fa-solid fa-plus"></i> Fazer Pergunta</button>
+                <button class="profile-btn">
+                    <img src="https://i.pravatar.cc/300" alt="Avatar do Usuário">
+                    <span>Seu Nome</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <aside class="sidebar">
+                <nav class="navigation">
+                    <a href="#" class="nav-item active"><i class="fa-solid fa-home"></i> Início</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-question"></i> Perguntas</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-tags"></i> Tags</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Usuários</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-star"></i> Não Respondidas</a>
+                </nav>
+            </aside>
+
+            <section class="content">
+                <div class="content-header">
+                    <h1 class="content-title">Top Perguntas</h1>
+                    <div class="content-filters">
+                        <button class="filter-btn active">Recentes</button>
+                        <button class="filter-btn">Populares</button>
+                        <button class="filter-btn">Em Alta</button>
+                    </div>
+                </div>
+                
+                <div class="question-list">
+                    <div class="question-card">
+                        <div class="question-stats">
+                            <div class="stat">
+                                <span class="stat-count">12</span>
+                                <span class="stat-label">votos</span>
+                            </div>
+                            <div class="stat answer-stat">
+                                <span class="stat-count">5</span>
+                                <span class="stat-label">respostas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-count">1.2k</span>
+                                <span class="stat-label">views</span>
+                            </div>
+                        </div>
+                        <div class="question-details">
+                            <h2 class="question-title"><a href="#">Como centralizar uma div verticalmente e horizontalmente com CSS Flexbox?</a></h2>
+                            <div class="question-tags">
+                                <span class="tag">css</span>
+                                <span class="tag">html</span>
+                                <span class="tag">frontend</span>
+                            </div>
+                            <div class="question-author">
+                                <img src="https://i.pravatar.cc/150?img=1" alt="Avatar do Autor">
+                                <p>Perguntado por <strong>Ana Silva</strong> há 2 horas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="question-stats">
+                            <div class="stat">
+                                <span class="stat-count">47</span>
+                                <span class="stat-label">votos</span>
+                            </div>
+                             <div class="stat answer-stat accepted">
+                                <span class="stat-count">8</span>
+                                <span class="stat-label">respostas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-count">5.8k</span>
+                                <span class="stat-label">views</span>
+                            </div>
+                        </div>
+                        <div class="question-details">
+                            <h2 class="question-title"><a href="#">Qual a melhor forma de fazer uma requisição API com JavaScript moderno (ES6+)?</a></h2>
+                            <div class="question-tags">
+                                <span class="tag">javascript</span>
+                                <span class="tag">api</span>
+                                <span class="tag">fetch</span>
+                            </div>
+                            <div class="question-author">
+                                <img src="https://i.pravatar.cc/150?img=2" alt="Avatar do Autor">
+                                <p>Perguntado por <strong>Carlos Souza</strong> ontem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

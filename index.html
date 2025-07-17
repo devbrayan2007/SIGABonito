@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA Bonito</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+  
+
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <!-- LOGO IVIG -->
+                <img src="logo-ivig.png" alt="Logo IVIG" class="logo-ivig">
+                
+    
+        
+                <h1>Bem-vindo de volta!</h1>
+                <p>Faça login para continuar na plataforma.</p>
+            </div>
+            
+            <form class="login-form" action="painel-principal.html" method="get">
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                </div>
+                
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Lembrar de mim</label>
+                    </div>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-logos">
+        <img src="logo-ivig-branca.png" alt="Logo IVIG" class="footer-logo">
+       
+    </div>
+
+    <p class="dev-info">Desenvolvido por <strong>Brayan R Campos</strong></p>
+
+    <div class="footer-social">
+        <a href="https://github.com/devbrayan2007" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/5521979625780" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/_brayanbr07" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
