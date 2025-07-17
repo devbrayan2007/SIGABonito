@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perguntas | SIGA Bonito</title>
+  <link rel="stylesheet" href="painel-principal.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<div class="app-container">
+  <header class="app-header">
+    <div class="app-header-left">
+      <span class="app-icon"><i class="fa-solid fa-city"></i></span>
+      <p class="app-name">SIGA Bonito</p>
+      <div class="search-wrapper">
+        <input class="search-input" type="text" placeholder="Pesquisar perguntas...">
+        <i class="fa-solid fa-search search-icon"></i>
+      </div>
+    </div>
+    <div class="app-header-right">
+      <button class="btn btn-primary" id="nova-pergunta-btn"><i class="fa-solid fa-plus"></i> Nova Pergunta</button>
+      <button class="profile-btn">
+        <img src="https://i.pravatar.cc/300" alt="Avatar do Usuário" />
+        <span>Administrador</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <aside class="sidebar">
+      <nav class="navigation">
+        <a href="painel.html" class="nav-item"><i class="fa-solid fa-home"></i> Painel</a>
+        <a href="perguntas.html" class="nav-item active"><i class="fa-solid fa-question"></i> Perguntas</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-lightbulb"></i> Estratégias</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-share-nodes"></i> Ramificações</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-map-location-dot"></i> Mapa Urbano</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Colaboradores</a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-gears"></i> Configurações</a>
+      </nav>
+    </aside>
+
+    <section class="content">
+      <div class="content-header">
+        <h1 class="content-title">Perguntas Urbanas</h1>
+        <div class="content-filters">
+          <button class="filter-btn active">Todas</button>
+          <button class="filter-btn">Respondidas</button>
+          <button class="filter-btn">Em Análise</button>
+        </div>
+      </div>
+
+      <div class="question-list">
+        <!-- Pergunta 1 -->
+        <div class="question-card">
+          <div class="question-details">
+            <h2 class="question-title">
+              <a href="#">Como lidar com o crescimento desordenado na periferia da cidade?</a>
+            </h2>
+            <div class="question-tags">
+              <span class="tag">urbanização</span>
+              <span class="tag">periferia</span>
+            </div>
+            <div class="question-author">
+              <img src="https://i.pravatar.cc/150?img=5" alt="Autor" />
+              <p>Inserido por <strong>Joana P.</strong> há 2 dias</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question-card">
+          <div class="question-details">
+            <h2 class="question-title">
+              <a href="#">Quais alternativas existem para regularizar áreas ocupadas irregularmente?</a>
+            </h2>
+            <div class="question-tags">
+              <span class="tag">regularização fundiária</span>
+              <span class="tag">REURB</span>
+            </div>
+            <div class="question-author">
+              <img src="https://i.pravatar.cc/150?img=11" alt="Autor" />
+              <p>Inserido por <strong>Pedro C.</strong> hoje</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/script.js"></script>
+
+
+
+ <footer class="footer">
+    <div class="footer-logos">
+        <img src="logo-ivig-branca.png" alt="Logo IVIG" class="footer-logo">
+       
+    </div>
+
+    <p class="dev-info">Desenvolvido por <strong>Brayan R Campos</strong></p>
+
+    <div class="footer-social">
+        <a href="https://github.com/devbrayan2007" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/5521979625780" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/_brayanbr07" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
